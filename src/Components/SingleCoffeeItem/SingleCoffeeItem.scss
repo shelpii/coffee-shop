@@ -1,0 +1,51 @@
+.single__coffee {
+    padding: 70px 0px 30px 0px;
+    &_container {
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        gap: 42px;
+    }
+
+    &_image {
+        img {
+
+        }
+    }
+    &_body {
+        display: flex;
+        flex-direction: column;
+        & :not(:first-child):not(:last-child) {
+            margin-bottom: 16px;
+        }
+        & :nth-child(2) {
+            margin-bottom: 26px;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    &_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_subtitle {
+        
+    }
+    &_name {
+        font-weight: 700;
+    }
+    &_country {
+        
+    }
+    &_description {
+        
+    }
+    &_price {
+        span {
+            font-size: 14px;
+        }
+        font-size: 24px;
+    }
+}

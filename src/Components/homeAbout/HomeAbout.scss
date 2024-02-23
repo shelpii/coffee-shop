@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+.home__about {
+    padding: 80px 0px 100px 0px;
+    &_container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & :not(:nth-child(2)):not(:last-child) {
+            margin-bottom: 20px;
+        }
+        & :nth-child(2) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &_description {
+        max-width: 590px;
+    }
+}
+
+@media (max-width: #{$md2}px) {
+    .home__about {
+        padding: 70px 0px 60px 0px;
+    }
+}
+

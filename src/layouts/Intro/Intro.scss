@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+.intro {
+    position: relative;
+    padding: 130px 0px 84px 0px;
+
+    &_title {
+        text-align: center;
+    }
+    &_image img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
