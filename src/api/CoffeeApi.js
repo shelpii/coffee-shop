@@ -9,3 +9,5 @@ export const CoffeeApi = createApi({
 		})
 	})
 });
+
+export const { useGetAllCoffeeQuery } = CoffeeApi;

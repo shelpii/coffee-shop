@@ -10,6 +10,9 @@ const CoffeeList = (props) => {
             <CoffeeItem/>
             <CoffeeItem/>
             <CoffeeItem/>
+            <CoffeeItem/>
+            <CoffeeItem/>
+            <CoffeeItem/>
         </ul>
     )
 }

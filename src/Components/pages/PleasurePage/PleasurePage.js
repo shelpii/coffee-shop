@@ -1,10 +1,11 @@
 import { Helmet } from "react-helmet";
-import Intro from "../../layouts/Intro/Intro";
-import { Pleasure } from "../../assets";
-import About from "../../layouts/About/About";
-import { CoffeeCup } from "../../assets";
-import AppHeader from "../appHeader/AppHeader";
-
+import Intro from "../../../layouts/Intro/Intro";
+import { Pleasure } from "../../../assets";
+import About from "../../../layouts/About/About";
+import { CoffeeCup } from "../../../assets";
+import AppHeader from "../../appHeader/AppHeader";
+import CoffeeList from '../../coffeeList/CoffeeList';
+import './PleasurePage.scss';
 
 const PleasurePage = () => {
     return (
@@ -19,6 +20,9 @@ const PleasurePage = () => {
             <AppHeader/>
             <Intro title="For your pleasure" image={Pleasure}/>
             <About title="About our goods" image={CoffeeCup}/>
+            <section className="coffee">
+                <CoffeeList/>
+            </section>
         </>
     )
 }

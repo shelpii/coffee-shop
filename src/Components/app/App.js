@@ -6,9 +6,9 @@ import "./App.scss";
 
 
 const HomePage = lazy(() => import('../pages/HomePage'));
-const OurPage = lazy(() => import('../pages/OurPage'));
+const OurPage = lazy(() => import('../pages/OurPage/OurPage'));
 const SinglePage = lazy(() => import('../pages/SinglePage'));
-const PleasurePage = lazy(() => import('../pages/PleasurePage'));
+const PleasurePage = lazy(() => import('../pages/PleasurePage/PleasurePage'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 
 function App() {

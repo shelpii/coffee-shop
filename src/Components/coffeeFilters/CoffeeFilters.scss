@@ -1,0 +1,94 @@
+@import "../../styles/variables.scss";
+.coffee__filters {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto 60px auto; 
+    &_search {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &_label {
+    }
+    &_input {
+        width: 180px;
+        height: 30px;
+        font-size: 12px;
+        padding: 6px 36px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
+        transition: box-shadow 0.3s ease-in-out;
+
+        &::placeholder {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.5);
+            transition: color 0.3s ease;
+        }
+
+        &:focus {
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+    &_countries {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+    &_list {
+        display: flex;
+        gap: 5px;
+    }
+    &_button {
+        height: 30px;
+        width: 75px;
+        font-size: 12px;
+        padding: 6px 10px;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
+        transition: background-color 0.4s ease-in-out;
+
+        &:first-child {
+            border-radius: 4px 0px 0px 4px;
+        }
+        &:last-child {
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+}
+
+.coffee__filters_button-active {
+    color: #fff;
+    background-color: #000;
+    box-shadow: none;
+}
+
+@media (max-width: #{$md2}px) {
+    .coffee__filters {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+@media (max-width: #{$md3}px) {
+    .coffee__filters {
+        &_search {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        &_countries {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
