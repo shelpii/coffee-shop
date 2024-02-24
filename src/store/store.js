@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import  { CoffeeApi } from '../api/CoffeeApi'
+import  { CoffeeApi } from '../api/CoffeeApi';
+import filters from '../Components/coffeeFilters/CoffeeSlice';
 
 
 const store = configureStore({
-    reducer: { [CoffeeApi.reducerPath]: CoffeeApi.reducer },
+    reducer: { filters, [CoffeeApi.reducerPath]: CoffeeApi.reducer },
     middleware: getDefaultMiddleware => getDefaultMiddleware().concat(CoffeeApi.middleware),
     devTools: process.env.NODE_ENV !== 'production',
 })
