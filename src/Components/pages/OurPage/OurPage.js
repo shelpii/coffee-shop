@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 import About from "../../../layouts/About/About";
 import Intro from "../../../layouts/Intro/Intro";
 import { introOur } from "../../../assets";
-import { drinkCoffee } from "../../../assets";
 import AppHeader from "../../appHeader/AppHeader";
 import CoffeeFilters from "../../coffeeFilters/CoffeeFilters";
 import CoffeeList from '../../coffeeList/CoffeeList'
@@ -20,11 +19,11 @@ const OurPage = () => {
             </Helmet>
             <AppHeader/>
             <Intro image={introOur} title="Our Coffee"/>
-            <About image={drinkCoffee} title="About our beans"/>
+            <About image={process.env.PUBLIC_URL + `/images/About/drink-coffee.jpg`} title="About our beans"/>
             <section className="coffee">
                 <div className="coffee_container">
                     <CoffeeFilters/>
-                    <CoffeeList/>
+                    <CoffeeList />
                 </div>
             </section>
         </>

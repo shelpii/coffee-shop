@@ -5,9 +5,8 @@ import WhiteLogo from './logo/white-logo.svg';
 import intro from './backgrounds/homepage.png';
 import paper from './backgrounds/paper.png';
 import introOur from './backgrounds/coffee-bg.png';
-import drinkCoffee from './images/About/drink-coffee.jpg';
 import Pleasure from './backgrounds/pleasure.png';
-import CoffeeCup from './images/About/Goods.png'
+
 
 export { BlackLogo, 
     WhiteLogo, 
@@ -16,6 +15,4 @@ export { BlackLogo,
     intro, 
     paper, 
     introOur, 
-    drinkCoffee, 
-    Pleasure, 
-    CoffeeCup };
+    Pleasure,};

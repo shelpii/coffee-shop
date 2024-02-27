@@ -1,14 +1,12 @@
 import BeansDecoration from "../../layouts/beansDecoration/BeansDecoration";
 import "./SingleCoffeeItem.scss";
 
-import CoffeeItem from '../../assets/images/Products/aromistico-big.png';
-
 const SingleCoffeeItem = () => {
     return (
         <div className="single__coffee">
             <div className="single__coffee_container">
                 <div className="single__coffee_image">
-                    <img src={CoffeeItem} alt=""/>
+                    <img src={process.env.PUBLIC_URL + `/images/Products/aromistico-big.png`} alt=""/>
                 </div>
                 <div className="single__coffee_body">
                     <div className="single__coffee_header">

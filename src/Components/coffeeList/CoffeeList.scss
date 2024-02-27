@@ -9,10 +9,22 @@
 	gap: 60px 70px;
 }
 
+.coffee__not-found {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
 @media (max-width: 900px) {
 	.coffee__list {
 		grid-template-columns: repeat(2, 220px);
 		grid-template-rows: repeat(3, 1fr);
+	}
+	.coffee__not-found {
+		grid-column-start: 1;
+		grid-column-end: 3;
 	}
 }
 
@@ -20,4 +32,9 @@
 	.coffee__list {
 		grid-template-columns: repeat(1, 220px);
 	}
+	.coffee__not-found {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
 }
+

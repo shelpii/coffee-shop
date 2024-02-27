@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "./CoffeeFilters.scss";
 import { selectAll, fetchFilters, ActiveFilterChanged, changedSearchValue } from "./CoffeeSlice";
+import Spinner from "../../layouts/Spinner/Spinner";
+import "./CoffeeFilters.scss";
 
 const CoffeeFilters = () => {
 

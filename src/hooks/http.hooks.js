@@ -1,22 +1,20 @@
-
 export const useHttp = () => {
-
-    const request = async (url, method = 'GET', body = null, headers = {'Content-Type': 'application/json'}) => {
-
+    const request = async url => {
         try {
-            const response = await fetch(url, {method,body,headers});
+            const response = await fetch(url);
 
             if (!response.ok) {
-                throw new Error(`Could not fetch ${url}, status: ${response.status}`);
+                throw new Error(`Could not fetch: ${url} - status: ${response.status}`);
             }
 
             const data = await response.json();
+
             return data;
-        } catch(e) {
+        } catch (e) {
+            console.log(e);
             throw e;
         }
+    };
 
-    }
-
-    return { request }
-}
+    return { request };
+};

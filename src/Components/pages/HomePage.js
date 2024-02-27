@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import HomeAbout from "../homeAbout/HomeAbout";
 import HomeIntro from "../homeIntro/HomeIntro";
 import HomeBest from "../homeBest/HomeBest";
@@ -6,7 +6,8 @@ import AppHeader from "../appHeader/AppHeader";
 
 const HomePage = () => {
     return (
-        <>
+        
+        <HelmetProvider>
             <Helmet>
                 <meta
                     name="description"
@@ -18,7 +19,7 @@ const HomePage = () => {
             <HomeIntro />
             <HomeAbout />
             <HomeBest  />
-        </>
+        </HelmetProvider>
     );
 };
 
