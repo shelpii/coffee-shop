@@ -6,8 +6,11 @@ export const CoffeeApi = createApi({
 	endpoints: builder => ({
 		getAllCoffee: builder.query({
 			query: () => "/coffee"
+		}),
+		getSingleCoffee: builder.query({
+			query: (id) => `/coffee/${id}`
 		})
 	})
 });
 
-export const { useGetAllCoffeeQuery } = CoffeeApi;
+export const { useGetAllCoffeeQuery, useGetSingleCoffeeQuery } = CoffeeApi;

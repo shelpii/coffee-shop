@@ -1,6 +1,8 @@
-import "./HomeIntro.scss";
+import { Link } from "react-router-dom";
 import { intro } from "../../assets";
 import BeansDecoration from "../../layouts/beansDecoration/BeansDecoration";
+import "./HomeIntro.scss";
+
 
 
 const HomeIntro = () => {
@@ -20,9 +22,9 @@ const HomeIntro = () => {
                         <h3 className="home__intro_subtitle subtitle">
                             Want to try our beans?
                         </h3>
-                        <a className="home__intro_button button">
+                        <Link className="home__intro_button button" to='/coffee'>
                             More
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="home__intro_image">

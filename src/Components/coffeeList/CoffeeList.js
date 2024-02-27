@@ -28,7 +28,7 @@ const CoffeeList = (props) => {
         }
         return items.map(({ id, ...props }) => {
             return (
-                <CoffeeItem key={id} {...props}/>
+                <CoffeeItem key={id} id={id} {...props}/>
             );
         });
     };

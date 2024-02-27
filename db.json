@@ -6,7 +6,8 @@
             "country": "Kenya",
             "price": "10.73",
             "best": true,
-            "img": "solimo"
+            "img": "solimo",
+            "description": "Experience the rich and bold flavors of Kenya with our Solimo Coffee Beans. Sourced from the highlands of Kenya, these beans offer a unique blend of fruity and floral notes, coupled with a deep chocolate undertone. Perfect for those who appreciate a robust and flavorful brew."
         },
         {
             "id": 2,
@@ -14,7 +15,8 @@
             "country": "Brazil",
             "price": "15.99",
             "best": true,
-            "img": "presto"
+            "img": "presto",
+            "description": "Indulge in the smooth and creamy taste of Brazil with our Presto Coffee Beans. Grown in the fertile lands of Brazil, these beans boast a velvety texture and a rich caramel flavor. Ideal for those who enjoy a mellow yet satisfying cup of coffee."
         },
         {
             "id": 3,
@@ -22,7 +24,8 @@
             "country": "Brazil",
             "price": "6.99",
             "best": true,
-            "img": "aromistico"
+            "img": "aromistico",
+            "description": "Transport yourself to the bustling streets of Brazil with our AROMISTICO Coffee. Crafted from the finest Brazilian beans, this coffee offers a balanced and aromatic experience with hints of nutty sweetness and a lingering cocoa finish. A true delight for coffee enthusiasts."
         },
         {
             "id": 4,
@@ -30,7 +33,8 @@
             "country": "Brazil",
             "price": "6.99",
             "best": false,
-            "img": "aromistico"
+            "img": "aromistico",
+            "description": "Discover the authentic taste of Brazil with our AROMISTICO Coffee. Sourced from the lush landscapes of Brazil, these beans deliver a smooth and flavorful brew with subtle hints of caramel and a satisfyingly bold finish. A perfect choice for any coffee lover."
         },
         {
             "id": 5,
@@ -38,7 +42,8 @@
             "country": "Colombia",
             "price": "6.99",
             "best": false,
-            "img": "aromistico"
+            "img": "aromistico",
+            "description": "Embark on a journey to Colombia with our AROMISTICO Coffee. Cultivated in the rich soils of Colombia, these beans offer a vibrant and complex flavor profile, featuring bright acidity, floral aromas, and notes of tropical fruits. An exquisite choice for those seeking a lively and refreshing cup."
         },
         {
             "id": 6,
@@ -46,7 +51,8 @@
             "country": "Kenya",
             "price": "6.99",
             "best": false,
-            "img": "aromistico"
+            "img": "aromistico",
+            "description": "Savor the essence of Kenya with our AROMISTICO Coffee. Harvested from the picturesque landscapes of Kenya, these beans captivate the senses with their bold and intense flavor, characterized by hints of blackcurrant, citrus, and dark chocolate. A truly remarkable coffee experience."
         },
         {
             "id": 7,
@@ -54,7 +60,8 @@
             "country": "Colombia",
             "price": "6.99",
             "best": false,
-            "img": "aromistico"
+            "img": "aromistico",
+            "description": "Experience the richness of Colombia with our AROMISTICO Coffee. Grown in the high-altitude regions of Colombia, these beans offer a smooth and well-balanced cup, featuring notes of caramel, nuts, and a hint of citrus. A delightful choice for any time of day."
         },
         {
             "id": 8,
@@ -62,7 +69,8 @@
             "country": "Kenya",
             "price": "6.99",
             "best": false,
-            "img": "aromistico"
+            "img": "aromistico",
+            "description": "Immerse yourself in the flavors of Kenya with our AROMISTICO Coffee. Handpicked from the lush coffee plantations of Kenya, these beans deliver a bold and robust brew, accented by hints of blackberry, wine, and dark chocolate. A true connoisseur's delight."
         },
         {
             "id": 9,
@@ -70,7 +78,8 @@
             "country": "Brazil",
             "price": "16.99",
             "best": false,
-            "img": "presto"
+            "img": "presto",
+            "description": "Treat yourself to the smooth and indulgent taste of Brazil with our Presto Coffee Beans. Sourced from the sun-drenched fields of Brazil, these beans offer a rich and creamy flavor profile, featuring notes of toasted nuts and a hint of caramel sweetness. A luxurious choice for discerning coffee lovers."
         }
 
     ],

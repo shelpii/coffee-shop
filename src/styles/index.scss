@@ -107,8 +107,8 @@ body {
 }
 
 .button-back {
+  display: inline-block;
   position: relative;
-  text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   color: #fff;
