@@ -9,8 +9,11 @@ const SingleCoffeeItem = (props) => {
     const { name, country, price, img, description } = coffee;
 
     return (
-        <div className="single__coffee">
+        <section className="single__coffee">
             <div className="single__coffee_container">
+                <div className="single__coffee_buttons">
+                    <Link className="single__coffee_button button-back" onClick={onPreviousPage}>Back</Link>
+                </div>
                 <div className="single__coffee_image">
                     <img src={process.env.PUBLIC_URL + `/images/Products/${img}-big.png`} alt=""/>
                 </div>
@@ -24,11 +27,8 @@ const SingleCoffeeItem = (props) => {
                     <p className="single__coffee_description">{description}</p>
                     <p className="single__coffee_price"><span>Price:</span>{price}$</p>
                 </div>
-                <div className="single__coffee_buttons">
-                    <Link className="single__coffee_button button-back" onClick={onPreviousPage}>Back</Link>
-                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

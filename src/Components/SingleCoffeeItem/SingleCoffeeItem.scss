@@ -1,17 +1,20 @@
+@import '../../styles/variables.scss';
 .single__coffee {
     padding: 70px 0px 30px 0px;
     &_container {
         max-width: 1000px;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
         gap: 42px;
     }
 
     &_image {
         img {
-
+            max-width: 100%;
         }
     }
+
     &_body {
         display: flex;
         flex-direction: column;
@@ -31,7 +34,7 @@
         align-items: center;
     }
     &_subtitle {
-        
+        margin: 0px 0px 20px 0px;
     }
     &_name {
         font-weight: 700;
@@ -40,12 +43,37 @@
         
     }
     &_description {
-        
+        max-width: 420px;
     }
     &_price {
         span {
             font-size: 14px;
         }
         font-size: 24px;
+    }
+    &_buttons {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: #{$md1}px) {
+}
+@media (max-width: #{$md2}px) {
+    .single__coffee {
+        padding: 50px 0px 30px 0px;
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: #{$md3}px) {
+    .single__coffee {
+        padding: 50px 0px 10px 0px;
+        &_buttons {
+            display: none;
+        }
     }
 }
